@@ -9,16 +9,13 @@
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Expires" content="0" />
     
-    <title>Radio Wtedy - Słuchaj na żywo</title>
+    <!-- EMBEDOWANIE CZCIONKI RETRO MASZYNY Z GOOGLE FONTS -->
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Cutive+Mono&family=Special+Elite&display=swap" rel="stylesheet">
+    
+    <title>radio wtedy - Słuchaj na żywo</title>
     <style>
-        /* WKODOWANA BEZPOŚREDNIO BRUDNA CZCIONKA Z SZERYFAMI I PLAMAMI TUSZU */
-        @font-face {
-            font-family: 'DirtyTypewriter';
-            src: url('data:font/woff2;base64,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') format('woff2');
-            font-weight: normal;
-            font-style: normal;
-        }
-
         body { 
             background-color: #121212; 
             color: #ffffff; 
@@ -39,16 +36,14 @@
             max-width: 450px; 
             width: 90%; 
         }
-        /* STYL PRAWDZIWEJ, ZABRUDZONEJ TUSZEM MASZYNY Z MOCNYMI SZERYFAMI */
+        /* STYL MASZYNY DO PISANIA W STYLU AMERICAN TYPEWRITER */
         h1 { 
             margin-bottom: 25px; 
-            font-size: 38px; 
+            font-size: 32px; 
             font-weight: normal; 
-            font-family: 'DirtyTypewriter', 'Courier New', Courier, monospace; 
-            letter-spacing: 1px;
-            color: #e5e5e5; 
-            /* Delikatny cień dodający realizmu rozlanego tuszu */
-            text-shadow: 1px 1px 1px rgba(255,255,255,0.1), -1px -1px 1px rgba(0,0,0,0.5);
+            font-family: 'Cutive Mono', 'American Typewriter', Georgia, serif; 
+            letter-spacing: 0px;
+            color: #ffffff;
         }
         .player-box { 
             margin-top: 20px; 
@@ -66,7 +61,7 @@
         
         <div class="player-box">
             <!-- ODWARZACZ LIVE ZE SLOTEX.PL -->
-            <audio controls preload="none"><source src="https://slotex.pl"></audio>
+            <audio controls preload="none"><source src="https://s3.slotex.pl/shoutcast/7124/stream?sid=1"></audio>
         </div>
     </div>
 
