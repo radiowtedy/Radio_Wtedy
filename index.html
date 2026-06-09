@@ -9,13 +9,11 @@
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Expires" content="0" />
     
-    <!-- EMBEDOWANIE CZCIONKI RETRO MASZYNY Z GOOGLE FONTS -->
-    <link rel="preconnect" href="https://googleapis.com">
-    <link rel="preconnect" href="https://gstatic.com" crossorigin>
-    <link href="https://googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
-    
     <title>Radio Wtedy - Słuchaj na żywo</title>
     <style>
+        /* IMPORTOWANIE BRUDNEJ CZCIONKI MASZYNOWEJ Z SZERYFAMI (HARTING) */
+        @import url('https://cdnfonts.com');
+
         body { 
             background-color: #121212; 
             color: #ffffff; 
@@ -36,14 +34,15 @@
             max-width: 450px; 
             width: 90%; 
         }
-        /* STYL MASZYNY DO PISANIA Z ZABRUDZENIAMI OD TUSZU */
+        /* STYL STAREJ, USZKODZONEJ MASZYNY Z MOCNYMI SZERYFAMI I PLAMAMI TUSZU */
         h1 { 
             margin-bottom: 25px; 
-            font-size: 34px; 
+            font-size: 36px; 
             font-weight: normal; 
-            font-family: 'Special Elite', 'Courier New', Courier, monospace; 
-            letter-spacing: 1px;
-            color: #e5e5e5; /* delikatnie złamana biel dla lepszego efektu starego papieru */
+            font-family: 'Harting', 'Courier New', Courier, monospace; 
+            letter-spacing: 2px;
+            color: #e5e5e5; 
+            text-transform: uppercase; /* Duże litery potęgują surowy efekt maszyny */
         }
         .player-box { 
             margin-top: 20px; 
