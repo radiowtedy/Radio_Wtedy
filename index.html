@@ -44,7 +44,6 @@
             font-family: 'American Typewriter', 'Cutive Mono', Georgia, serif; 
             letter-spacing: 0px;
             color: #ffffff;
-            /* WYMUSZENIE MAŁYCH LITER */
             text-transform: lowercase; 
         }
         .player-box { 
@@ -54,18 +53,34 @@
         audio {
             width: 100%;
         }
+        /* STYL DLA RETRO LINKU WSPARCIA */
+        .support-link {
+            margin-top: 25px;
+            display: block;
+            font-family: 'American Typewriter', 'Cutive Mono', Georgia, serif;
+            font-size: 15px;
+            color: #aaaaaa;
+            text-decoration: underline;
+            text-transform: lowercase;
+            transition: color 0.2s ease;
+        }
+        .support-link:hover {
+            color: #ffffff;
+        }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <!-- TEKST WPISANY Z MAŁYCH LITER -->
         <h1>radio wtedy</h1>
         
         <div class="player-box">
             <!-- ODWARZACZ LIVE ZE SLOTEX.PL -->
             <audio controls preload="none"><source src="https://slotex.pl"></audio>
         </div>
+
+        <!-- LINK DO WSPIERANIA RADIA NA SUPPI -->
+        <a href="http://suppi.pl" target="_blank" class="support-link">wspieraj na suppi.pl/radiowtedy</a>
     </div>
 
 </body>
