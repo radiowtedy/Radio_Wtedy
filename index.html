@@ -3,6 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- WYMUSZENIE ODŚWIEŻANIA DLA SŁUCHACZY - BLOKADA CACHE -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    
+    <!-- EMBEDOWANIE CZCIONKI RETRO MASZYNY Z GOOGLE FONTS -->
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Cutive+Mono&family=Special+Elite&display=swap" rel="stylesheet">
+    
     <title>Radio Wtedy - Słuchaj na żywo</title>
     <style>
         body { 
@@ -25,8 +36,22 @@
             max-width: 450px; 
             width: 90%; 
         }
-        h1 { margin-bottom: 25px; font-size: 24px; font-weight: 600; }
-        .player-box { margin-top: 20px; width: 100%; }
+        /* STYL MASZYNY DO PISANIA W STYLU AMERICAN TYPEWRITER */
+        h1 { 
+            margin-bottom: 25px; 
+            font-size: 32px; 
+            font-weight: normal; 
+            font-family: 'Cutive Mono', 'American Typewriter', Georgia, serif; 
+            letter-spacing: 0px;
+            color: #ffffff;
+        }
+        .player-box { 
+            margin-top: 20px; 
+            width: 100%; 
+        }
+        audio {
+            width: 100%;
+        }
     </style>
 </head>
 <body>
@@ -35,6 +60,7 @@
         <h1>Radio Wtedy</h1>
         
         <div class="player-box">
+            <!-- ODWARZACZ LIVE ZE SLOTEX.PL -->
             <audio controls preload="none"><source src="https://s3.slotex.pl/shoutcast/7124/stream?sid=1"></audio>
         </div>
     </div>
