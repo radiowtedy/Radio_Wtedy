@@ -17,7 +17,9 @@
     <title>radio wtedy - słuchaj na żywo</title>
     <style>
         body { 
-            background-color: #121212; 
+            /* CZARNO-SZARE TŁO O FAKTURZE POMIĘTEGO PAPIERU */
+            background-color: #121212;
+            background-image: url('https://transparenttextures.com');
             color: #ffffff; 
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
             margin: 0; 
@@ -30,11 +32,13 @@
         .container { 
             text-align: center; 
             padding: 30px; 
-            background: #1e1e1e; 
+            /* SUBTELNA PRZEZROCZYSTOŚĆ ABY PRZEŚWITYWAŁA TEKSTURA */
+            background: rgba(30, 30, 30, 0.85); 
             border-radius: 15px; 
-            box-shadow: 0 8px 24px rgba(0,0,0,0.5); 
+            box-shadow: 0 8px 32px rgba(0,0,0,0.7); 
             max-width: 450px; 
             width: 90%; 
+            backdrop-filter: blur(4px); /* delikatne rozmycie tła za ramką */
         }
         /* STYL AMERICAN TYPEWRITER / CUTIVE MONO */
         h1 { 
@@ -58,7 +62,7 @@
             margin-top: 25px;
             display: block;
             font-family: 'American Typewriter', 'Cutive Mono', Georgia, serif;
-            font-size: 13px;
+            font-size: 12px; 
             color: #aaaaaa;
             text-decoration: underline;
             text-transform: lowercase;
@@ -76,11 +80,11 @@
         
         <div class="player-box">
             <!-- ODWARZACZ LIVE ZE SLOTEX.PL -->
-            <audio controls preload="none"><source src="https://s3.slotex.pl/shoutcast/7124/stream?sid=1">
-            </audio>
+            <audio controls preload="none"><source src="https://s3.slotex.pl/shoutcast/7124/stream?sid=1"></audio>
+        </div>
 
         <!-- LINK DO WSPIERANIA RADIA NA SUPPI -->
-        <a href="http://suppi.pl/radiowtedy" target="_blank" class="support-link">wspieraj na suppi.pl/radiowtedy</a>
+        <a href="http://suppi.pl" target="_blank" class="support-link">wspieraj na suppi.pl/radiowtedy</a>
     </div>
 
 </body>
