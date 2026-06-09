@@ -9,12 +9,12 @@
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Expires" content="0" />
     
-    <!-- EMBEDOWANIE CZCIONKI RETRO MASZYNY Z GOOGLE FONTS -->
+    <!-- EMBEDOWANIE CZCIONKI MASZYNY Z GOOGLE FONTS -->
     <link rel="preconnect" href="https://googleapis.com">
     <link rel="preconnect" href="https://gstatic.com" crossorigin>
-    <link href="https://googleapis.com/css2?family=Cutive+Mono&family=Special+Elite&display=swap" rel="stylesheet">
+    <link href="https://googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet">
     
-    <title>radio wtedy - Słuchaj na żywo</title>
+    <title>radio wtedy - słuchaj na żywo</title>
     <style>
         body { 
             background-color: #121212; 
@@ -36,14 +36,16 @@
             max-width: 450px; 
             width: 90%; 
         }
-        /* STYL MASZYNY DO PISANIA W STYLU AMERICAN TYPEWRITER */
+        /* STYL AMERICAN TYPEWRITER / CUTIVE MONO */
         h1 { 
             margin-bottom: 25px; 
             font-size: 32px; 
             font-weight: normal; 
-            font-family: 'Cutive Mono', 'American Typewriter', Georgia, serif; 
+            font-family: 'American Typewriter', 'Cutive Mono', Georgia, serif; 
             letter-spacing: 0px;
             color: #ffffff;
+            /* WYMUSZENIE MAŁYCH LITER */
+            text-transform: lowercase; 
         }
         .player-box { 
             margin-top: 20px; 
@@ -57,11 +59,12 @@
 <body>
 
     <div class="container">
-        <h1>Radio Wtedy</h1>
+        <!-- TEKST WPISANY Z MAŁYCH LITER -->
+        <h1>radio wtedy</h1>
         
         <div class="player-box">
             <!-- ODWARZACZ LIVE ZE SLOTEX.PL -->
-            <audio controls preload="none"><source src="https://s3.slotex.pl/shoutcast/7124/stream?sid=1"></audio>
+            <audio controls preload="none"><source src="https://slotex.pl"></audio>
         </div>
     </div>
 
