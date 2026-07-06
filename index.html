@@ -72,24 +72,31 @@
         }
         .player-box { 
             margin-top: 20px; 
+            margin-bottom: 25px;
             width: 100%; 
         }
         audio {
             width: 100%;
         }
-        /* STYL DLA RETRO LINKU WSPARCIA */
-        .support-link {
-            margin-top: 25px;
-            display: block;
+        /* STYL DLA RETRO LINKU WSPARCIA ORAZ TEKSTÓW INFORMACYJNYCH */
+        .support-link, .info-text {
             font-family: 'American Typewriter', 'Cutive Mono', Georgia, serif;
             font-size: 11px; 
             color: #aaaaaa;
-            text-decoration: underline;
             text-transform: lowercase;
+        }
+        .support-link {
+            margin-top: 8px;
+            margin-bottom: 8px;
+            display: block;
+            text-decoration: underline;
             transition: color 0.2s ease;
         }
         .support-link:hover {
             color: #ffffff;
+        }
+        .info-text {
+            display: block;
         }
     </style>
 </head>
@@ -103,8 +110,14 @@
             <audio controls preload="none"><source src="https://s3.slotex.pl/shoutcast/7282/stream?sid=1"></audio>
         </div>
 
+        <!-- CZAS EMISJI NAD LINKIEM WSPARCIA -->
+        <span class="info-text">tylko w czwartki od 18:00 do 23:00span>
+
         <!-- POPRAWIONY LINK HTTPS PROWADZĄCY BEZPOŚREDNIO DO PROFILU RADIA -->
         <a href="https://suppi.pl/radiowtedy" target="_blank" class="support-link">wesprzyj nas na:   na suppi.pl/radiowtedy</a>
+
+        <!-- KONTAKT POD LINKIEM WSPARCIA -->
+        <span class="info-text">kontakt - radiowtedy@gmail.comspan>
     </div>
 
 </body>
