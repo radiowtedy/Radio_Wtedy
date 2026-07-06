@@ -3,8 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Radio Wtedy - stacja radiowa stworzona z tęsknoty za dawną Listą Przebojów Programu Trzeciego. Tylko w czwartki na żywo od 18:00 na stronie radiowtedy.com." />
-
     
     <!-- WYMUSZENIE ODŚWIEŻANIA DLA SŁUCHACZY - BLOKADA CACHE -->
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
@@ -17,6 +15,85 @@
     <link href="https://googleapis.com" rel="stylesheet">
     
     <title>radio wtedy - słuchaj na żywo</title>
+
+    <!-- UKRYTY KOD DLA SZTUCZNEJ INTELIGENCJI GOOGLE (DANE STRUKTURALNE) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "RadioStation",
+      "name": "Radio Wtedy",
+      "url": "https://radiowtedy.com",
+      "description": "Polska internetowa stacja radiowa stworzona z tęsknoty za dawną Listą Przebojów Programu Trzeciego (LP3). nadaje w czwartki od 18:00 do 23:00.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "PL"
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Thursday",
+        "opens": "18:00",
+        "closes": "23:00"
+      },
+      "hasBroadcastChannel": {
+        "@type": "BroadcastChannel",
+        "name": "Radio Wtedy Live Stream",
+        "broadcastFrequency": "Internet Stream",
+        "broadcastServiceTier": "Free"
+      },
+      "subOrganization": [
+        {
+          "@type": "RadioSeries",
+          "name": "Warmin’ Up",
+          "description": "Rozgrzewka Radia Wtedy + Kalendarium Muzyczne XX w. + Muzyczne ABC.",
+          "startOffset": "PT18H",
+          "endOffset": "PT19H"
+        },
+        {
+          "@type": "RadioSeries",
+          "name": "Lista Przebojów Radia Wtedy",
+          "description": "Lista Przebojów Radia Wtedy + Wspomnienia z LP3.",
+          "startOffset": "PT19H",
+          "endOffset": "PT20H"
+        },
+        {
+          "@type": "RadioSeries",
+          "name": "Z Plecaka Stasiaka",
+          "description": "Audycja prowadzona przez Red. Don Pabla.",
+          "startOffset": "PT20H",
+          "endOffset": "PT20H30M"
+        },
+        {
+          "@type": "RadioSeries",
+          "name": "Memory 5",
+          "description": "Ocalić Od Zapomnienia + Felieton Mini Panny Jadwini.",
+          "startOffset": "PT20H30M",
+          "endOffset": "PT21H"
+        },
+        {
+          "@type": "RadioSeries",
+          "name": "Krew Szatana",
+          "description": "Audycja z cięższą muzyką gitarową. Prowadzi Red. Mozart.",
+          "startOffset": "PT21H",
+          "endOffset": "PT21H15M"
+        },
+        {
+          "@type": "RadioSeries",
+          "name": "Kontrolowana Strefa Zgniotu",
+          "description": "Audycja z muzyką jazzową i okołojazzową. Prowadzi prof. Mozart.",
+          "startOffset": "PT21H15M",
+          "endOffset": "PT21H30M"
+        },
+        {
+          "@type": "RadioSeries",
+          "name": "Tendencyjna Nocna Menda",
+          "description": "Blok muzyczny zawierający: kącik minimaxowy, kącik liryczny, kącik filmowy. Zakończenie programu o 23:00.",
+          "startOffset": "PT21H30M",
+          "endOffset": "PT23H"
+        }
+      ]
+    }
+    </script>
+
     <style>
         body { 
             margin: 0; 
@@ -40,7 +117,7 @@
         .container { 
             text-align: center; 
             padding: 30px; 
-            margin-top: 15px; /* BEZPIECZNY ODSTĘP OD GÓRNEJ KRAWĘDZI EKRANU */
+            margin-top: 40px; /* BEZPIECZNY ODSTĘP OD GÓRNEJ KRAWĘDZI EKRANU */
             /* CIEMNOSZARA RAMKA Z SUBTELNĄ PRZEZROCZYSTOŚCIĄ */
             background: rgba(28, 28, 28, 0.9); 
             border: 1px solid rgba(255, 255, 255, 0.05);
