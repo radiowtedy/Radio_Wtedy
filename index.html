@@ -12,7 +12,7 @@
     <!-- EMBEDOWANIE CZCIONKI MASZYNY Z GOOGLE FONTS -->
     <link rel="preconnect" href="https://googleapis.com">
     <link rel="preconnect" href="https://gstatic.com" crossorigin>
-    <link href="https://googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet">
+    <link href="https://googleapis.com" rel="stylesheet">
     
     <title>radio wtedy - słuchaj na żywo</title>
     <style>
@@ -62,7 +62,7 @@
         }
         /* STYL AMERICAN TYPEWRITER / CUTIVE MONO */
         h1 { 
-            margin-bottom: 25px; 
+            margin-bottom: 10px; 
             font-size: 32px; 
             font-weight: normal; 
             font-family: 'American Typewriter', 'Cutive Mono', Georgia, serif; 
@@ -78,46 +78,53 @@
         audio {
             width: 100%;
         }
-        /* STYL DLA RETRO LINKU WSPARCIA ORAZ TEKSTÓW INFORMACYJNYCH */
-        .support-link, .info-text {
+        /* STYL DLA RETRO LINKÓW ORAZ TEKSTÓW INFORMACYJNYCH */
+        .support-link, .contact-link, .info-text {
             font-family: 'American Typewriter', 'Cutive Mono', Georgia, serif;
             font-size: 11px; 
             color: #aaaaaa;
             text-transform: lowercase;
         }
-        .support-link {
-            margin-top: 8px;
-            margin-bottom: 8px;
+        .support-link, .contact-link {
             display: block;
             text-decoration: underline;
             transition: color 0.2s ease;
         }
-        .support-link:hover {
+        .support-link {
+            margin-top: 8px;
+            margin-bottom: 8px;
+        }
+        .contact-link {
+            margin-top: 8px;
+        }
+        .support-link:hover, .contact-link:hover {
             color: #ffffff;
         }
         .info-text {
             display: block;
+            margin-bottom: 5px;
         }
     </style>
 </head>
 <body>
 
     <div class="container">
+        <!-- NAZWA RADIA -->
         <h1>radio wtedy</h1>
         
+        <!-- CZAS EMISJI PRZENIESIONY NAD ODTWARZACZ -->
+        <span class="info-text">tylko w czwartki od 18:00 do 23:00</span>
+
         <div class="player-box">
             <!-- ODWARZACZ LIVE ZE SLOTEX.PL -->
-            <audio controls preload="none"><source src="https://s3.slotex.pl/shoutcast/7282/stream?sid=1"></audio>
+            <audio controls preload="none"><source src="https://slotex.pl"></audio>
         </div>
 
-        <!-- CZAS EMISJI NAD LINKIEM WSPARCIA -->
-        <span class="info-text">tylko w czwartki od 18:00 do 23:00 CET>
-
         <!-- POPRAWIONY LINK HTTPS PROWADZĄCY BEZPOŚREDNIO DO PROFILU RADIA -->
-        <a href="https://suppi.pl/radiowtedy" target="_blank" class="support-link">wesprzyj nas na:   na suppi.pl/radiowtedy</a>
+        <a href="https://suppi.pl" target="_blank" class="support-link">wesprzyj nas na:   na suppi.pl/radiowtedy</a>
 
-        <!-- KONTAKT POD LINKIEM WSPARCIA -->
-        <span class="info-text">kontakt - radiowtedy@gmail.com>
+        <!-- KONTAKT JAKO AKTYWNY LINK POD LINKIEM WSPARCIA -->
+        <a href="mailto:radiowtedy@gmail.com" class="contact-link">kontakt - radiowtedy@gmail.com</a>
     </div>
 
 </body>
